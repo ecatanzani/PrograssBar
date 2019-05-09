@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-extern void pBar(const double ptg);
+extern void pBar(double ptg);
 extern double normalize(double &ptg);
 
 #endif

@@ -1,6 +1,6 @@
 #include "progHeader.h"
 
-void pBar(const double ptg)   //ptg is a percentage from 0 to 100
+void pBar(double ptg)   //ptg is a percentage from 0 to 100
 {
     normalize(ptg);     //normalize the percentage from 0 to 1
     int barWidth = 70;
@@ -8,13 +8,12 @@ void pBar(const double ptg)   //ptg is a percentage from 0 to 100
     int pos = barWidth * ptg;
     for (int idx = 0; idx < barWidth; ++idx)
     {
-        if(idx < pos)
+        if(idx <= pos)
             std::cout << "|";
         //else if(idx == pos)
         //    std::cout << ">";
         else
-            if(idx != pos)
-                std::cout << " ";
+        	std::cout << " ";
     }
     std::cout << "] " << int(ptg * 100.0) << " %\r";
     std::cout.flush();
