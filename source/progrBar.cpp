@@ -15,7 +15,7 @@ void pBar(double ptg)   //ptg is a percentage from 0 to 100
         else
             std::cout << " ";
     }
-    std::cout << "] " << int(ptg * 100.0 + 1) << " %\r";
+    std::cout << "] " << int(ptg * 100.0) << " %\r";
     std::cout.flush();
 }
 
