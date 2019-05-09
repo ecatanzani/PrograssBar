@@ -1,6 +1,6 @@
 #include "progHeader.h"
 
-void pBar(double ptg)   //ptg is a percentage from 0 to 100
+void pBar(const double ptg)   //ptg is a percentage from 0 to 100
 {
     normalize(ptg);     //normalize the percentage from 0 to 1
     int barWidth = 70;
