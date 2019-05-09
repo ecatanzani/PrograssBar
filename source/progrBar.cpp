@@ -13,7 +13,8 @@ void pBar(const double ptg)   //ptg is a percentage from 0 to 100
         //else if(idx == pos)
         //    std::cout << ">";
         else
-            std::cout << " ";
+            if(idx != pos)
+                std::cout << " ";
     }
     std::cout << "] " << int(ptg * 100.0) << " %\r";
     std::cout.flush();
